@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .login-container {
+            background: rgba(255, 192, 203, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+			background-image: url(shoes.jpg);
+        }
+
+        .subtitle {
+            display: block;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            color: white;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .input-group input.input-error {
+            border-color: #e74c3c;
+            background-color: #fde8e8;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #556cd6;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop class="bg-video">
+        <source src="M.mp4" type="video/mp4">
+    </video>
+
+    <div class="login-container">
+        <form id="loginForm" action="Home.html" method="get">
+            <span class="subtitle">Please Sign in here!</span>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="pa" placeholder="Enter ur Username">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="chups" placeholder="Enter ur Password">
+            </div>
+
+            <button type="submit" class="submit-btn">Log in na</button>
+        </form>
+    </div>
+	<script>
+		function validationForm(){
+		event.preventDefault();
+		const username = document.getElementById("username").value;
+		const password = document.getElementById("password").value;
+		if(username === "pa"&&password === "chups"){
+		window.location.href="Home.html";
+		return false;
+		}
+		else{
+		alert("invalid username or password");
+		return false;
+		}
+		}
+		</script>
+		
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapatosan ni Tekyo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('shoes.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* Navbar Layout */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* Logo Sizing */
+        .logo img {
+            height: 100px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        /* Navigation Links Container */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        /* Individual Navigation Links */
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #007BFF;
+        }
+
+        /* Main Content Box */
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        main p {
+            color: #ddd;
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+			text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="about.html"><img src="lg.jpg" alt="Sapatosan ni Tekyo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Sapatosan ni Tekyo</h1>
+        <p>Sapatosan ni Tekyo are dedicated to bringing you the best footwear selections, combining style, comfort, and durability to fit your everyday lifestyle.</p>
+        <p>Founded with a passion for quality shoes, our mission is to make sure every step you take looks great and feels even better. Thank you for choosing us as your trusted footwear partner!</p>
+    </main>
+
+</body>
+</html>

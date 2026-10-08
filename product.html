@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Services - Sapatosan ni Tekyo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('shoes.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* Navbar Layout */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* Logo Sizing */
+        .logo img {
+            height: 100px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        /* Navigation Links Container */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        /* Individual Navigation Links */
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: #007BFF;
+        }
+
+        /* Main Section Container */
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        main p.subtitle {
+            color: #ddd;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* Product Grid Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Individual Product Cards */
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .product-card .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007BFF;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .btn-buy {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-buy:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="about.html"><img src="lg.jpg" alt="Sapatosan ni Tekyo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html" class="active">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Tekyo's Collection & Products</h1>
+        <p class="subtitle">Explore our premium selection of footwear crafted for comfort, durability, and style.</p>
+
+        <div class="product-grid">
+            <!-- Product Item 1 -->
+            <div class="product-card">
+                <img src="nike.jpg" alt="Casual Sneaker">
+                <h3>Nike</h3>
+                <p>For everyday fashion. Designed to give you power, cushioning, and style in every step.</p>
+                <span class="price">&#8369;2,499 only</span>
+                <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+
+            <!-- Product Item 2 -->
+            <div class="product-card">
+                <img src="adidas.jpg" alt="Formal Leather Shoes">
+                <h3>Adidas</h3>
+                <p>For casual lyfestyle. Best for people who need comfort.</p>
+                <span class="price">&#8369;3,899 only</span>
+                <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+
+            <!-- Product Item 3 -->
+            <div class="product-card">
+                <img src="reebok.jpg" alt="Shoe Cleaning Service">
+                <h3>Reebok</h3>
+                <p>Perfect for casual wear and all-day comfort.</p>
+                <span class="price">&#8369;3,499 only</span>
+                <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+	
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url(shoes.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* Navbar Layout */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+			
+        }
+
+        /* Logo Sizing */
+        .logo img {
+            height: 100px;
+            width: auto;
+			border-radius: 50%;
+        }
+
+        /* Navigation Links container */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        /* Individual Navigation Links */
+        .nav-links li a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #007BFF;
+        }
+
+        /* Hero Section */
+        main {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        main p {
+            color: white;
+            font-size: 30px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="Home.html"><img src="lg.jpg" alt="Sapatosan ni Tekyo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+				<li><a href="login.html" class="Logout">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+ 
+    <main>
+        <h1>Welcome sa Sapatosan ni Tekyo!</h1>
+        <p>Don't just wear shoes, wear confidence. Shop the latest collection and enjoy free delivery.</p>
+    </main>
+
+</body>
+</html>
